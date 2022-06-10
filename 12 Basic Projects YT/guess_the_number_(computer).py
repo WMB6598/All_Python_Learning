@@ -14,7 +14,6 @@ def guess(x) :
             elif guess > random_number :
                 print("Too high, try again") 
         except :
-            print("Input a number")
-            
+            print("Input a number") 
     print(f"Correct number {random_number}")
-guess(100)
+guess(1000)
