@@ -8,13 +8,13 @@ def guess(x) :
     while guess != random_number :
         guess = input(f"Guess a number between 1 and {x}: ")
         try :
+            guess = int(guess)
             if guess < random_number :
                 print("Too low, try again")
             elif guess > random_number :
-                print("Too high, try again")
-            print(f"Correct number {random_number}")
+                print("Too high, try again") 
         except :
             print("Input a number")
             
-
+    print(f"Correct number {random_number}")
 guess(100)
