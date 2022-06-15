@@ -1,5 +1,5 @@
 import random
-from words import words
+from words import words #Document of words that we prepared previously, saved in same folder
 import string #For alphabet function below
 
 def get_valid_word(words):
