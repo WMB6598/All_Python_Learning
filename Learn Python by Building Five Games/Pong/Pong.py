@@ -1,4 +1,5 @@
 import turtle # This is used for the graphics
+import winsound # This is used to interact with the OS, to use the sound
 
 # Setting up the window
 win =  turtle.Screen() # This creates the window
@@ -90,6 +91,7 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1 # This reverses the balls 
+        winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
         
     if ball.ycor() < - 290:
         ball.sety( - 290)
