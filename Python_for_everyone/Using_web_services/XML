@@ -1,0 +1,26 @@
+eXtensible Markup Language
+Serialize / De-Serialize:
+    Convert data from one program into a common format that can be stored and/or transmitted between systems iin a programming language-independant manner
+XML Basics:
+Key:
+Start tag           <person>
+End Tag             </person>
+Text Content        07468512098
+Attribute           type="intl"
+Self Closing Tag    <email hide="yes"/>
+
+Full Example:
+<person>
+    <name>Will</name>
+    <phone type="intl">
+        07468512098
+    </phone>
+    <email hide="yes"/>
+</person>
+
+XML Text and attributes - Only one parent but can have multiple children
+See Using_web_services\XML_Tree_Graph.png for more information
+Complex nodes are the nodes that contain other nodes
+Simple nodes are nodes that can only contain an attribute and one text node
+
+Another way of looking at XML is that each node is a path. Using_web_services\XML_Tree_Graph2.png
